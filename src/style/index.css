@@ -51,6 +51,39 @@ body {
   display: inline-block;
 }
 
+.fl_left,
+.imgl {
+  float: left;
+}
+
+.fl_right,
+.imgr {
+  float: right;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+  border: none;
+  margin-left: 20vh;
+}
+
+.imgl,
+.imgr {
+  padding: 4px;
+  border: 1px solid #d8d9de;
+}
+
+.imgl {
+  margin: 0 15px 15px 0;
+  clear: left;
+}
+
+.imgr {
+  margin: 0 0 15px 15px;
+  clear: right;
+}
+
 .wrapper {
   display: block;
   width: 100%;
@@ -82,6 +115,11 @@ body {
   color: #676767;
   background-color: #191919;
   border: none;
+}
+
+.col2 {
+  color: #c2c0c0;
+  background-color: #202020;
 }
 
 #topbar {
@@ -134,5 +172,113 @@ body {
   padding: 0;
   cursor: pointer;
   background: none;
+}
+
+#header {
+  display: block;
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+}
+
+#topnav {
+  float: right;
+  margin-top: 21px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#topnav ul, #topnav li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#topnav li {
+  float: right;
+  margin-right: 30px;
+}
+
+#topnav li li {
+  margin-right: 0;
+}
+
+#topnav li span {
+  display: block;
+  margin: 5px 0 0 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: lowercase;
+  color: #666666;
+  background-color: #202020;
+  font-weight: normal;
+  line-height: normal;
+}
+
+#topnav li a:link,
+#topnav li a:visited,
+#topnav li a:hover {
+  display: block;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  background-color: #202020;
+  text-transform: uppercase;
+}
+
+#topnav li a:hover,
+#topnav li .active a {
+  color: #fbf8cd;
+  background-color: #202020;
+}
+
+#topnav li li a:link,
+#topnav li li a:visited {
+  width: 150px;
+  float: none;
+  margin: 0;
+  padding: 7px 10px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #ffffff;
+  background-color: #202020;
+  border: none;
+}
+
+#topnav li li a:hover {
+  color: #fbf8cd;
+  background-color: #202020;
+}
+
+#topnav ul ul li a:link,
+#topnav ul ul li a:visited {
+  border: none;
+}
+
+#topnav ul ul {
+  z-index: 9999;
+  position: absolute;
+  left: -999em;
+  height: auto;
+  width: 170px;
+  border-left: 1px solid #666666;
+  border-bottom: 1px solid #666666;
+}
+
+#topnav ul ul a {
+  width: 140px;
+}
+
+#topnav li:hover {
+  position: static;
+}
+
+#topnav li:hover ul {
+  left: auto;
+}
+
+#topnav li.last {
+  margin-right: 0;
 }
 /*# sourceMappingURL=index.css.map */

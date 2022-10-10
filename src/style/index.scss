@@ -46,6 +46,35 @@ body {
   display: inline-block;
 }
 
+//#####  position: flyto and images
+.fl_left,
+.imgl {
+  float: left;
+}
+.fl_right,
+.imgr {
+  float: right;
+}
+img {
+  margin: 0;
+  padding: 0;
+  border: none;
+  margin-left: 20vh;
+}
+.imgl,
+.imgr {
+  padding: 4px;
+  border: 1px solid #d8d9de;
+}
+.imgl {
+  margin: 0 15px 15px 0;
+  clear: left;
+}
+.imgr {
+  margin: 0 0 15px 15px;
+  clear: right;
+}
+
 //########################   wrapper   #########################
 
 .wrapper {
@@ -77,6 +106,10 @@ body {
     background-color: #191919;
     border: none;
   }
+}
+.col2 {
+  color: #c2c0c0;
+  background-color: #202020;
 }
 
 #topbar {
@@ -121,12 +154,110 @@ body {
     background: url("images/search_l.gif") 0 0 no-repeat #2c2c2c;
     border: none;
     #go {
-        width: 35px;
-        height: 30px;
-        margin: 0;
-        padding: 0;
-        cursor: pointer;
-        background: none;
+      width: 35px;
+      height: 30px;
+      margin: 0;
+      padding: 0;
+      cursor: pointer;
+      background: none;
     }
+  }
+}
+
+#header {
+  display: block;
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+}
+
+//########################   Navigation top bar   #########################
+#topnav {
+  float: right;
+  margin-top: 21px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  li {
+    float: right;
+    margin-right: 30px;
+    li {
+      margin-right: 0;
+    }
+    span {
+      display: block;
+      margin: 5px 0 0 0;
+      padding: 0;
+      font-size: 16px;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform: lowercase;
+      color: #666666;
+      background-color: #202020;
+      font-weight: normal;
+      line-height: normal;
+    }
+    a:link,
+    a:visited,
+    a:hover {
+      display: block;
+      margin: 0;
+      padding: 0;
+      color: #ffffff;
+      background-color: #202020;
+      text-transform: uppercase;
+    }
+    a:hover,
+    .active a {
+      color: #fbf8cd;
+      background-color: #202020;
+    }
+    li a:link,
+    li a:visited {
+      width: 150px;
+      float: none;
+      margin: 0;
+      padding: 7px 10px;
+      font-size: 16px;
+      font-weight: normal;
+      color: #ffffff;
+      background-color: #202020;
+      border: none;
+    }
+    li a:hover {
+      color: #fbf8cd;
+      background-color: #202020;
+    }
+  }
+
+  ul ul li a:link,
+  ul ul li a:visited {
+    border: none;
+  }
+
+  ul ul {
+    z-index: 9999;
+    position: absolute;
+    left: -999em;
+    height: auto;
+    width: 170px;
+    border-left: 1px solid #666666;
+    border-bottom: 1px solid #666666;
+    a {
+      width: 140px;
+    }
+  }
+  li:hover {
+    position: static;
+    ul {
+      left: auto;
+    }
+  }
+  li.last {
+    margin-right: 0;
   }
 }
