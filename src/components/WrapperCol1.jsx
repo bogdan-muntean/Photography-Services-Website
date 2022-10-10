@@ -7,7 +7,7 @@ const WrapperCol1 = () => {
             <form action="#" method="post" id="search">
             <fieldset>
                 <legend>Site Search</legend>
-                <input type="text" value="Search In Our Website&hellip;" onfocus="this.value=(this.value=='Search Our Website&hellip;')? '' : this.value ;" />
+                <input type="text" value="Search In Our Website" onfocus="" />
                 <input type="image" id="go" src="../images/search.gif" alt="Search" />
             </fieldset>
             </form>
