@@ -1,0 +1,132 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  overflow-y: scroll;
+}
+
+body {
+  margin: 2px;
+  padding: 2px;
+  color: #cccccc;
+  background-color: #333333;
+}
+
+//########################   keywords   #########################
+.justify {
+  text-align: justify;
+}
+.bold {
+  font-weight: bold;
+}
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+.nostart {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.clear::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+}
+.clear {
+  display: inline-block;
+}
+
+//########################   wrapper   #########################
+
+.wrapper {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0 0 15px 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: normal;
+  }
+}
+
+.col1 {
+  color: #676767;
+  background-color: #191919;
+  border-top: 10px solid #b86365;
+  a {
+    color: #676767;
+    background-color: #191919;
+    border: none;
+  }
+}
+
+#topbar {
+  display: block;
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+  padding: 15px 0;
+  p,
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: normal;
+  }
+  //   ul{
+  //     float: left;
+  //     margin-top: 7px;
+  //   }
+
+  li {
+    display: inline;
+    margin: 0 15px 0 0;
+  }
+  li.last {
+    margin-right: 0;
+  }
+}
+
+#search {
+  float: right;
+  margin: 0;
+  padding: 0;
+  input {
+    display: block;
+    float: left;
+    width: 190px;
+    height: 20px;
+    margin: 0;
+    padding: 5px 5px 5px 10px;
+    color: #c7ced6;
+    background: url("images/search_l.gif") 0 0 no-repeat #2c2c2c;
+    border: none;
+    #go {
+        width: 35px;
+        height: 30px;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+        background: none;
+    }
+  }
+}
