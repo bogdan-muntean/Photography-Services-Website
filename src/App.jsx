@@ -8,7 +8,7 @@ export const App = () => {
       <WrapperCol1/>
       <WrapperCol2/>
       <div id="backtotop">
-        <a href="#topOfBody" class="topOfPage">La începutul paginii</a>
+        <a href="#topOfBody" className="topOfPage">La începutul paginii</a>
       </div>
     </div>
   )
